@@ -33,10 +33,77 @@
                         <a href="#" class="nav__link">sign up</a>
                     </li>
                 </ul>
-                <div class="nav__login">Login</div>
+                <div class="nav__login">
+                    <svg class="nav__login--icon">
+                        <use xlink:href="img/icons.svg#flag"></use>
+                    </svg>
+                    <select name="lang" id="lang" class=" nav__login--select">
+                        <option value="">EN</option>
+                        <option value="">RU</option>
+                        <option value="">DE</option>
+                        <option value="">FR</option>
+                    </select>
+                    
+                    <button class="nav__login--button">login</button>
+                </div>
             </nav>
             <h1 class="header__title">cloudbudget</h1>
+            <div class="header__subtitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium exercitationem, illo veniam sunt iure.</p>
+            </div>
+            
+                <button class="header__button">sign up</button>
+            
         </header>
+        <section class="features">
+             <h2 class="features__title">Features</h2>
+             <div class="features__wrapper">
+                
+                    <div class="features__block">
+                        <img src="img/features_money.png" alt="">
+                        <div class="features__tiles">
+                            <h4 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                            <a href="#" class="read__more">Read More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="features__block">
+                        <img src="img/features_phone.png" alt="">
+                        <div class="features__tiles">
+                            <h4 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                            <a href="#" class="read__more">Read More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="features__block">
+                        <img src="img/features_holl.png" alt="">
+                        <div class="features__tiles">
+                            <h4 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                            <a href="#" class="read__more">Read More</a>
+                        </div>
+                    </div>
+                
+             </div>
+        </section>
+        <section class="contact">
+            <div class="contact__text">
+                <h2>Contact</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus! Quidem saepe molestiae eaque sunt?</P>
+            </div>
+            <div class="contact__form">
+                <form class="contact__form--form" action="" name="form">
+                    <input  class="contact__form--input"  type="text" placeholder="First Name">
+                    <input  class="contact__form--input" type="text" placeholder="Last Name">
+                    <input  class="contact__form--input tel"  type="tel" placeholder="phone Number">
+                    <select class="contact__form--select" name="" id="">Select Service</select>
+                    <button class="contact__form--button"type="submit"> submit Now</button>
+                    
+                </form>
+            </div>
+        </section>
     </div>
 </body>
 </html>
