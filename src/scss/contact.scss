@@ -7,52 +7,66 @@
     margin-top: 100px;
     margin-bottom: 300px;
     
-    
-    &__text{
+    &__head{
         width: 445px;
         height: 160px;
         display: flex;
-        
         flex-direction: column;
         text-align: center;
-        
     }
+    
+    &__title{
+        font-size: 36px;
+        margin-bottom: 50px;
+
+    }
+    
+    &__text{
+        font-size: 14px;
+    }        
+       
+    
 
     &__form{
         display: flex;
-        width: 540px;
-        height: 305px;
+        flex-wrap: wrap;
         
+        width: 540px;
+        height: 305px;      
+    } 
 
-        &--form{
+    &-form{
+        :nth-child(1){
+            margin-right: 20px;
+        } 
 
-        }
-
-        &--input{
+            &__input{
             width: 255px;
             height: 60px;
+            padding: 30px;
             border-radius: 6px;
             margin-bottom: 30px;
+            border: 1px solid #333 ;
+            box-sizing: border-box;
 
-                    }
-            &.tel{
+                    
+            &--tel{
                 width: 540px;
                 height: 60px;
-                
-            }
-        }
+                  }
+                }
 
-        &--select{
+        &__select{
             width: 540px;
             height: 60px;
             margin-bottom: 30px;
             border-radius: 6px;
+            
         }
 
-    &--button{
+             &__button{
        
             margin: auto;
-            
             width: 160px;
             height: 50px;
             border: 1px solid #fff;
@@ -65,13 +79,12 @@
     
             &:hover{
                 color: rgb(34, 28, 88);
-                border-color: rgb(34, 28, 88);;
+                border-color: rgb(34, 28, 88);
                 transition:  0.2s linear;
-            }
+            }}
            
+            }}
+
         
-    }
-
-    }
-
-}
+               
+    

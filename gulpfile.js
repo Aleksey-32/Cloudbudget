@@ -11,6 +11,7 @@ var config = {
         html: './public/index.html'
     },
     output: {
+        cssPath: './public/styles',
         cssName: 'bundle.min.css',
         path: './public'
     }
@@ -23,7 +24,7 @@ gulp.task('scss', function() {
         .pipe(concat(config.output.cssName))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(config.output.path))
+        .pipe(gulp.dest(config.output.cssPath))
         .pipe(browserSync.stream());
 });
 

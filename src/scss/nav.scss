@@ -17,7 +17,7 @@
         font-size: 22px;
         
 
-        &--icon{
+        &__icon{
             width: 30px;
             height: 20px;
             margin: auto;
@@ -49,15 +49,16 @@
 
     &__login{
         margin: auto;
-        color: #000;
+            }
+      &-login{  
         
-        &--icon{
+        &__icon{
             width: 30px;
             height: 20px;
         }
 
-        &--button{
-            margin-left: 10px;
+        &__button{
+            margin-left: 20px;
             width: 100px;
             height: 40px;
             border: 1px solid #ffff;
@@ -73,8 +74,38 @@
                 transition:  0.2s linear;
             }
         }
-        &--select{
+        &__select{
             background-color: transparent;
+            
         }
+
+
     }
 }
+
+.selection{
+    color: #ffff;
+}
+.select2-selection{
+    background-color:transparent;
+          color: #ffff;
+}
+.select2-selection__rendered{
+    color: #ffff;
+}
+
+.select2-container{
+    background-color: transparent;
+    color: #ffff;
+}
+
+.select2-results__options{
+    background-color:transparent;
+    
+}
+
+.select2-dropdown{
+    background-color:transparent;
+    width: 60px;
+}
+    
