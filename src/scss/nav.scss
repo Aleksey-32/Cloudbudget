@@ -11,7 +11,7 @@
     text-transform: uppercase;
     color: #ffff;
     
-    &__logo{
+    &__logo {
         margin: auto;
         font-weight: bold;
         font-size: 22px;
@@ -22,6 +22,16 @@
             height: 20px;
             margin: auto;
         }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    &__toggle {
+        display: none;
     }
 
     &__menu{
@@ -83,13 +93,38 @@
     }
 }
 
+.select2-container {
+    width: auto !important;
+}
+
+.nav-login-select {
+    &__selection {
+        &.select2-selection {
+            background-color:transparent;
+
+            .select2-selection {
+                &__rendered {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__dropdown {
+        .select2-results {
+            &__option {
+                &--highlighted {
+                    background-color: green !important;
+                }
+            }
+        }
+    }
+}
+
 .selection{
     color: #ffff;
 }
-.select2-selection{
-    background-color:transparent;
-          color: #ffff;
-}
+
 .select2-selection__rendered{
     color: #ffff;
 }

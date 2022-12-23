@@ -7,7 +7,8 @@ var browserSync = require('browser-sync').create();
 
 var config = {
     path: {
-        scss: './src/scss/**/*.scss',
+        scss: './src/scss/main.scss',
+        watchPath: './src/scss/**/*.scss',
         html: './public/index.html'
     },
     output: {
@@ -35,7 +36,7 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch(config.path.scss, gulp.series('scss'));
+    gulp.watch(config.path.watchPath, gulp.series('scss'));
     gulp.watch(config.path.html).on('change', browserSync.reload);
 
 });

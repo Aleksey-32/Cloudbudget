@@ -13,42 +13,45 @@
     <div class="wrapper">
         <header class="header">
             <nav class="nav">
-                <div class="nav__logo">
-                    <svg class="nav__logo__icon">
+                <div class="nav__logo nav-logo">
+                    <svg class="nav-logo__icon">
                         <use xlink:href="img/icons.svg#cloud"></use>
                     </svg>
-                    <span class='nav__logo__title'>Cloudbudget</span>
+                    <span class='nav-logo__title'>Cloudbudget</span>
                 </div>
-                <ul class="nav__menu">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">overview</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">features</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">technology</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">contact</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">sign up</a>
-                    </li>
-                </ul>
-                <div class="nav__login nav-login">
-                    <svg class="nav-login__icon">
-                        <use xlink:href="img/icons.svg#flag"></use>
-                    </svg>
-                    <select name="lang" id="lang" class=" nav-login__select">
-                        <option value="">EN</option>
-                        <option value="">RU</option>
-                        <option value="">DE</option>
-                        <option value="">FR</option>
-                    </select>
-                    
-                    <button class="nav-login__button">login</button>
+                <div class="nav__wrapper">
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">overview</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">features</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">technology</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">sign up</a>
+                        </li>
+                    </ul>
+                    <div class="nav__login nav-login">
+                        <svg class="nav-login__icon">
+                            <use xlink:href="img/icons.svg#flag"></use>
+                        </svg>
+                        <select name="lang" id="lang" class="nav-login__select nav-login-select">
+                            <option value="">EN</option>
+                            <option value="">RU</option>
+                            <option value="">DE</option>
+                            <option value="">FR</option>
+                        </select>
+                        <button class="nav-login__button">login</button>
+                    </div>
+                    <button class="nav__toggle">burger</button>
                 </div>
+                <button class="nav__toggle">burger</button>
             </nav>
             <h1 class="header__title">cloudbudget</h1>
             <div class="header__subtitle">
@@ -60,31 +63,30 @@
         <section class="features">
              <h2 class="features__title">Features</h2>
              <div class="features__wrapper">
-                
                     <div class="features__block">
-                        <img src="img/features_money.png" alt="">
+                        <img src="img/features_money.png" alt="" class="features__image">
                         <div class="features__tiles">
-                            <h4 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
-                            <a href="#" class="read__more">Read More</a>
+                            <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                            <a href="#" class="features__link">Read More</a>
                         </div>
                         
                     </div>
                     <div class="features__block">
-                        <img src="img/features_phone.png" alt="">
+                        <img src="img/features_phone.png" alt="" class="features__image">
                         <div class="features__tiles">
-                            <h4 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
-                            <a href="#" class="read__more">Read More</a>
+                            <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                            <a href="#" class="features__link">Read More</a>
                         </div>
                         
                     </div>
                     <div class="features__block">
-                        <img src="img/features_holl.png" alt="">
+                        <img src="img/features_holl.png" alt="" class="features__image">
                         <div class="features__tiles">
-                            <h4 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
-                            <a href="#" class="read__more">Read More</a>
+                            <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                            <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                            <a href="#" class="features__link">Read More</a>
                         </div>
                     </div>
                 

@@ -1,14 +1,10 @@
-@import "partials/mixins";
-@import "partials/params";
-
 .header{
     position: relative;
     display: flex;
     flex-direction: column;
     background-blend-mode: multiply;
-    background: url("/img/header_bg.png");
+    background: url("/img/header_bg.png") no-repeat top center/cover;
     z-index: 1;
-    background-size: cover;
 
     &::before {
         content: '';

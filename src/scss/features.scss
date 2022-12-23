@@ -2,62 +2,71 @@
 @import "partials/params";
 
 .features{
-    
     display: flex;
     flex-direction: column;
     background-color: #FAFAFA;
 
-    &__title{
+    &__title {
         margin: auto;
         margin-top: 60px;
         margin-bottom: 60px;
         font-size: 32px;
     }
     
-    &__wrapper{
+    &__wrapper {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 120px;
         
     }
 
-    &__block{
-        
-        margin-bottom: 120px;
-        
-
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        flex-basis: calc((100% - 120px) / 3);
     }
 
-    &__tiles{
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__tiles {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin: auto;
+        padding: 5px 10px;
         margin-top: -100px;
-        width: 293px;
-        height: 198px;
+        width: 80%;
+        min-height: 198px;
         background-color: #fff;
         border-radius: 5px;
-        
-        & .subtitle{
-            margin: auto;
-            text-align: center;
-        }
+    }
 
-        & .description{
-            margin: auto;
-            text-align: center;
-        }
+    &__subtitle {
+        margin: auto;
+        text-align: center;
+    }
 
-        & .read__more{
-            margin: auto;
-            text-align: center;
-            color:$rose;
-            &:hover{
-                color: rgb(34, 28, 88);
-                transition: color 0.2s linear;
-            }
+    &__description {
+        margin: auto;
+        text-align: center;
+    }
+    
+    &__link {
+        margin: auto;
+        text-align: center;
+        color:$rose;
+
+        &:hover{
+            color: rgb(34, 28, 88);
+            transition: color 0.2s linear;
         }
     }
 
-
-    }
+}

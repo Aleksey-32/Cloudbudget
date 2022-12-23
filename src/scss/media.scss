@@ -1,0 +1,46 @@
+@media screen and (max-width: 1023px) {
+    .nav {
+        &__wrapper {
+            position: fixed;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            transition: transform 0.2s linear;
+
+            &--is-active {
+                transform: translateX(0);
+            }
+        }
+
+        &__menu {
+            flex-direction: column;
+        }
+        
+        &__toggle {
+            display: flex;
+        }
+
+        &__link {
+            color: #000;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .features {
+        &__wrapper {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+    }
+}
