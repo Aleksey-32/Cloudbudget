@@ -1,8 +1,10 @@
 
 
 $(document).ready(function() {
-    $(".contact-form__select").select2({
+    $(".contact-form__select").select2({    
         minimumResultsForSearch:-1,
+        selectionCssClass: 'contact-form__select__selection',
+        dropdownCssClass: 'contact-form__select__dropdown',
 
     });  
 
@@ -13,8 +15,12 @@ $(document).ready(function() {
     });
 
     $('.nav__toggle').click(function() {
-        $('.nav__wrapper').toggleClass('nav__wrapper--is-active');
-    })
+        $('.nav__wrapper').toggleClass('nav__wrapper--is-active'),
+        $('.nav__toggle--hide').hide(2000).show(2000);
+        
+     });
+
+    
     
 });
 

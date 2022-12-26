@@ -10,8 +10,9 @@
             width: 100%;
             max-width: 500px;
             padding: 20px;
-            background-color: #fff;
+            background-color: transparent;
             transition: transform 0.2s linear;
+            
 
             &--is-active {
                 transform: translateX(0);
@@ -24,11 +25,24 @@
         
         &__toggle {
             display: flex;
+
+            &--hide{
+                background-color: rgb(230, 11, 11);
+            }
+            
+           
         }
 
         &__link {
-            color: #000;
-        }
+            color:#fff;
+                    }
+    }
+
+    .contact{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 

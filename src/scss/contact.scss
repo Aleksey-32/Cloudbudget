@@ -30,6 +30,7 @@
     &__form{
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
         
         width: 540px;
         height: 305px;      
@@ -57,16 +58,58 @@
                 }
 
         &__select{
+            &__selection{
             width: 540px;
-            height: 60px;
-            margin-bottom: 30px;
+            height: 60px !important;   
+            padding: 15px 25px;     
             border-radius: 6px;
-            
+
+             & .select2{  
+                &__selection{
+
+                    &--single{
+                        background-color: aqua;  
+                    }
+                }
+                
+                &-container{
+                    background-color: aqua;
+                    &--below{
+                        background-color: aqua;
+
+                    }
+                    }
+             }
+
+             
+             
+
+            }
+
+            &__dropdown {
+                background-color:#fff;
+                color: #000;
+                .select2-results {
+                    &__option {
+                        &--highlighted {
+                            background-color:$rose !important;
+                            
+                        }
+                        &--selected{
+                            color: rgb(16, 41, 2);
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
         }
 
-             &__button{
        
-            margin: auto;
+       
+
+             &__button{
+            margin-top: 30px;
+           
             width: 160px;
             height: 50px;
             border: 1px solid #fff;

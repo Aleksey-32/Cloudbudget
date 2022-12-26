@@ -11,8 +11,8 @@
     text-transform: uppercase;
     color: #ffff;
     
-    &__logo {
-        margin: auto;
+    &-logo {
+        margin-left: 0;
         font-weight: bold;
         font-size: 22px;
         
@@ -32,6 +32,8 @@
 
     &__toggle {
         display: none;
+        width: 30px;
+        height: 30px;
     }
 
     &__menu{
@@ -111,36 +113,20 @@
     }
 
     &__dropdown {
+        background-color:transparent;
+        color: #fff;
         .select2-results {
             &__option {
                 &--highlighted {
-                    background-color: green !important;
+                    background-color: rgb(10, 36, 83) !important;
+                    
+                }
+                &--selected{
+                    color: rgb(16, 41, 2);
+                    background-color: transparent;
                 }
             }
         }
     }
 }
 
-.selection{
-    color: #ffff;
-}
-
-.select2-selection__rendered{
-    color: #ffff;
-}
-
-.select2-container{
-    background-color: transparent;
-    color: #ffff;
-}
-
-.select2-results__options{
-    background-color:transparent;
-    
-}
-
-.select2-dropdown{
-    background-color:transparent;
-    width: 60px;
-}
-    
