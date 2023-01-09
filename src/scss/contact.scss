@@ -28,8 +28,7 @@
     
 
     &__form{        
-        width: 540px;
-        height: 305px;      
+        width: 540px;     
     } 
 }
 
@@ -38,6 +37,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    box-sizing: border-box;
 
     &__input {
         flex-basis: calc(50% - 10px);
@@ -54,41 +54,7 @@
         }
     }
 
-    &__select {
-        &__selection {
-        width: 540px;
-        height: 60px !important;   
-        padding: 15px 25px;     
-        border-radius: 6px;
-
-            & .select2{  
-                &__selection{
-                    &--single{
-                        background-color: aqua;  
-                    }
-                }
-            }
-        }
-
-        &__dropdown {
-            background-color:#fff;
-            color: #000;
-            .select2-results {
-                &__option {
-                    &--highlighted {
-                        background-color:$rose !important;
-                        
-                    }
-                
-                }
-            }
-        }
-    }
-
-   
-   
-
-         &__button {
+    &__button {
         margin-top: 30px;
        
         width: 160px;
@@ -109,10 +75,41 @@
        
 }
 
-.select2-selection__arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px !important;
-    height: 60px !important;
+.contact-form-select {
+    &__selection {
+        width: 540px;
+        height: 60px !important;   
+        padding: 15px 25px;     
+        border-radius: 6px;
+
+        & .select2{  
+            &__selection{
+                &--single{
+                    background-color: aqua;  
+                }
+            }
+        }
+
+        .select2-selection__arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px !important;
+            height: 60px !important;
+        }
+    }
+
+    &__dropdown {
+        background-color:#fff;
+        color: #000;
+        .select2-results {
+            &__option {
+                &--highlighted {
+                    background-color:$rose !important;
+                    
+                }
+            
+            }
+        }
+    }
 }

@@ -3,8 +3,8 @@
 $(document).ready(function() {
     $(".contact-form__select").select2({    
         minimumResultsForSearch:-1,
-        selectionCssClass: 'contact-form__select__selection',
-        dropdownCssClass: 'contact-form__select__dropdown',
+        selectionCssClass: 'contact-form-select__selection',
+        dropdownCssClass: 'contact-form-select__dropdown',
 
     });  
 
