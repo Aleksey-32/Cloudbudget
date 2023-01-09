@@ -1,22 +1,27 @@
 
 
-html,body{
+html,body {
 @include clear;
 width: 100%;
 font-family: 'Roboto', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6{
 @include clear; 
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    
-    
+button {
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }

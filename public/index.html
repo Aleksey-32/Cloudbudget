@@ -10,113 +10,112 @@
     
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <nav class="nav">
-                <div class="nav__logo nav-logo">
-                    <svg class="nav-logo__icon">
-                        <use xlink:href="img/icons.svg#cloud"></use>
-                    </svg>
-                    <span class='nav-logo__title'>Cloudbudget</span>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="nav__logo nav-logo">
+                <svg class="nav-logo__icon">
+                    <use xlink:href="img/icons.svg#cloud"></use>
+                </svg>
+                <span class='nav-logo__title'>Cloudbudget</span>
+            </a>
+            <div class="nav__wrapper">
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">overview</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">technology</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">sign up</a>
+                    </li>
+                </ul>
+                <div class="nav__login nav-login">
+                    <select name="lang" id="lang" class="nav-login__select nav-login-select">
+                        <option value="">EN</option>
+                        <option value="">RU</option>
+                        <option value="">DE</option>
+                        <option value="">FR</option>
+                    </select>
+                    <button class="nav-login__button ">login</button>
                 </div>
-                <div class="nav__wrapper">
-                    <ul class="nav__menu">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">overview</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">features</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">technology</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">contact</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">sign up</a>
-                        </li>
-                    </ul>
-                    <div class="nav__login nav-login">
-                        
-                        <select name="lang" id="lang" class="nav-login__select nav-login-select">
-                            <option value="">EN</option>
-                            <option value="">RU</option>
-                            <option value="">DE</option>
-                            <option value="">FR</option>
-                        </select>
-                        <button class="nav-login__button ">login</button>
-                    </div>
-                    <svg class="nav__toggle">
-                        <use xlink:href="img/icons.svg#burger"></use>
+                <button class="nav__close nav-toggle">
+                    <svg class="nav-toggle__icon">
+                        <use xlink:href="img/icons.svg#close"></use>
                     </svg>
-                </div>
-                <svg class="nav__toggle">
+                </button>
+                
+            </div>
+            <button class="nav__open nav-toggle">
+                <svg class="nav-toggle__icon">
                     <use xlink:href="img/icons.svg#burger"></use>
                 </svg>
-            </nav>
-            <h1 class="header__title">cloudbudget</h1>
-            <div class="header__subtitle">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium exercitationem, illo veniam sunt iure.</p>
-            </div>
-            
-                <button class="header__button">sign up</button>
-        </header>
-        <section class="features">
-             <h2 class="features__title">Features</h2>
-             <div class="features__wrapper">
-                    <div class="features__block">
-                        <img src="img/features_money.png" alt="" class="features__image">
-                        <div class="features__tiles">
-                            <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                            <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
-                            <a href="#" class="features__link">Read More</a>
-                        </div>
-                        
+            </button>
+        </nav>
+        <h1 class="header__title">cloudbudget</h1>
+        <p class="header__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium exercitationem, illo veniam sunt iure.</p>
+        <button class="header__button">sign up</button>
+        
+    </header>
+    <section class="features">
+         <h2 class="features__title">Features</h2>
+         <div class="features__wrapper">
+                <div class="features__block">
+                    <img src="img/features_money.png" alt="" class="features__image">
+                    <div class="features__tiles">
+                        <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                        <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                        <a href="#" class="features__link">Read More</a>
                     </div>
-                    <div class="features__block">
-                        <img src="img/features_phone.png" alt="" class="features__image">
-                        <div class="features__tiles">
-                            <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                            <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
-                            <a href="#" class="features__link">Read More</a>
-                        </div>
-                        
-                    </div>
-                    <div class="features__block">
-                        <img src="img/features_holl.png" alt="" class="features__image">
-                        <div class="features__tiles">
-                            <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                            <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
-                            <a href="#" class="features__link">Read More</a>
-                        </div>
-                    </div>
-                
-             </div>
-        </section>
-        <section class="contact">
-            <div class="contact__head">
-                <h2 class="contact__title">Contact</h2>
-                <P  class="contact__text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus! Quidem saepe molestiae eaque sunt?</P>
-            </div>
-            
-                <form class="contact__form contact-form" action="" name="form">
-                    <input  class="contact-form__input"  type="text" placeholder="First Name">
-                    <input  class="contact-form__input" type="text" placeholder="Last Name">
-                    <input  class="contact-form__input contact-form__input--tel"  type="tel" placeholder="Phone Number">
-                    <select class="contact-form__select" name="" id="">
-                        <option value="">select option 1</option>
-                        <option value="">select option 2</option>
-                        <option value="">select option 3</option>
-                        <option value="">select option 4</option>
-                        <option value="">select option 5</option>
-                    </select>
-                    <button class="contact-form__button"type="submit"> submit Now</button>
                     
-                </form>
+                </div>
+                <div class="features__block">
+                    <img src="img/features_phone.png" alt="" class="features__image">
+                    <div class="features__tiles">
+                        <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                        <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                        <a href="#" class="features__link">Read More</a>
+                    </div>
+                    
+                </div>
+                <div class="features__block">
+                    <img src="img/features_holl.png" alt="" class="features__image">
+                    <div class="features__tiles">
+                        <h4 class="features__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                        <p class="features__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ducimus culpa.</p>
+                        <a href="#" class="features__link">Read More</a>
+                    </div>
+                </div>
             
-        </section>
-    </div>
+         </div>
+    </section>
+    <section class="contact">
+        <div class="contact__head">
+            <h2 class="contact__title">Contact</h2>
+            <P  class="contact__text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repellendus! Quidem saepe molestiae eaque sunt?</P>
+        </div>
+        
+            <form class="contact__form contact-form" action="" name="form">
+                <input  class="contact-form__input"  type="text" placeholder="First Name">
+                <input  class="contact-form__input" type="text" placeholder="Last Name">
+                <input  class="contact-form__input contact-form__input--tel"  type="tel" placeholder="Phone Number">
+                <select class="contact-form__select" name="" id="">
+                    <option value="">select option 1</option>
+                    <option value="">select option 2</option>
+                    <option value="">select option 3</option>
+                    <option value="">select option 4</option>
+                    <option value="">select option 5</option>
+                </select>
+                <button class="contact-form__button"type="submit"> submit Now</button>
+                
+            </form>
+    </section>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>

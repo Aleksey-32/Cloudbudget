@@ -14,10 +14,8 @@ $(document).ready(function() {
         dropdownCssClass: 'nav-login-select__dropdown',
     });
 
-    $('.nav__toggle').click(function() {
-        $('.nav__wrapper').toggleClass('nav__wrapper--is-active'),
-        $('.nav__toggle--hide').hide(2000).show(2000);
-        
+    $('.nav__open, .nav__close').click(function() {
+        $('.nav__wrapper').toggleClass('nav__wrapper--is-active'); 
      });
 
     

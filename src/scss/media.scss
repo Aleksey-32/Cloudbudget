@@ -2,13 +2,14 @@
     .nav {
         &__wrapper {
             position: fixed;
+        
             top: 0;
             right: 0;
             transform: translateX(100%);
             flex-direction: column-reverse;
             align-items: flex-start;
             width: 100%;
-            max-width: 500px;
+            max-width: 320px;
             padding: 20px;
             background-color: rgb(252, 83, 50);
             transition: transform 0.2s linear;
@@ -22,22 +23,19 @@
 
         &__menu {
             flex-direction: column;
+            gap: 5px;
         }
         
-        &__toggle {
-            display: flex;
-
-            &--hide{
-                background-color: rgb(230, 11, 11);
-            }
-                      
+        &__open,
+        &__close {
+            display: flex;                      
         }
 
         &__link {
             color:#fff;
                     }
-        &__login{
-            margin: 20px auto;
+        &__login {
+            margin: 30px 0 10px;
         }
     }
 
