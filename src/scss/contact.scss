@@ -59,7 +59,7 @@
 
         &__select{
             &__selection{
-            width: 540px;
+            max-width: 540px;
             height: 60px !important;   
             padding: 15px 25px;     
             border-radius: 6px;
@@ -71,18 +71,9 @@
                         background-color: aqua;  
                     }
                 }
-                
-                &-container{
-                    background-color: aqua;
-                    &--below{
-                        background-color: aqua;
-
-                    }
-                    }
+               
              }
-
-             
-             
+                     
 
             }
 
@@ -95,10 +86,7 @@
                             background-color:$rose !important;
                             
                         }
-                        &--selected{
-                            color: rgb(16, 41, 2);
-                            background-color: transparent;
-                        }
+                    
                     }
                 }
             }
