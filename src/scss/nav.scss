@@ -64,15 +64,11 @@
             }
       &-login{  
         
-        &__icon{
-            width: 30px;
-            height: 20px;
-        }
-
+        
         &__button{
             margin-left: 20px;
             width: 100px;
-            height: 40px;
+            height: 30px;
             border: 1px solid #ffff;
             border-radius: 5px;
             background-color: transparent;
@@ -113,7 +109,7 @@
     }
 
     &__dropdown {
-        background-color:transparent;
+        background-color:rgb(227, 95, 69);
         color: #fff;
         .select2-results {
             &__option {

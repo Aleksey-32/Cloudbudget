@@ -10,12 +10,13 @@
             width: 100%;
             max-width: 500px;
             padding: 20px;
-            background-color: transparent;
+            background-color: rgb(227, 95, 69);
             transition: transform 0.2s linear;
             
 
             &--is-active {
                 transform: translateX(0);
+                               
             }
         }
 
@@ -29,13 +30,15 @@
             &--hide{
                 background-color: rgb(230, 11, 11);
             }
-            
-           
+                      
         }
 
         &__link {
             color:#fff;
                     }
+        &__login{
+            margin: 20px auto;
+        }
     }
 
     .contact{
