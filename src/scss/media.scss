@@ -1,8 +1,7 @@
 @media screen and (max-width: 1023px) {
     .nav {
         &__wrapper {
-            position: fixed;
-        
+            position: fixed;            
             top: 0;
             right: 0;
             transform: translateX(100%);
@@ -13,11 +12,9 @@
             padding: 20px;
             background-color: rgb(252, 83, 50);
             transition: transform 0.2s linear;
-            
 
             &--is-active {
                 transform: translateX(0);
-                               
             }
         }
 
@@ -25,52 +22,47 @@
             flex-direction: column;
             gap: 5px;
         }
-        
+
         &__open,
         &__close {
-            display: flex;                      
+            display: flex;
         }
 
         &__link {
-            color:#fff;
-                    }
+            color: #fff;
+        }
         &__login {
             margin: 30px 0 10px;
         }
     }
 
     .contact {
-
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
         margin-bottom: 100px;
 
-        &__head{
+        &__head {
             max-width: 445px;
             height: 160px;
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-        
-        &__title{
+
+        &__title {
             font-size: 30px;
             margin-bottom: 25px;
-    
         }
-        
-        &__text{
+
+        &__text {
             font-size: 14px;
-        }        
+        }
     }
-
-
 }
 
 @media screen and (max-width: 767px) {
-
     .features {
         &__wrapper {
             flex-direction: column;
@@ -86,10 +78,8 @@
         }
     }
 
-    .header{
-        
-    
-        &__title{
+    .header {
+        &__title {
             margin: auto;
             margin-top: 80px;
             margin-bottom: 20px;
@@ -97,8 +87,8 @@
             font-size: 50px;
             color: #fff;
         }
-    
-        &__subtitle{
+
+        &__subtitle {
             text-align: center;
             font-size: 18px;
             height: 80px;
@@ -106,40 +96,39 @@
             margin: auto;
             color: #fff;
         }
-    
-        &__button{
+
+        &__button {
             margin: auto;
             margin-top: 25px;
             margin-bottom: 70px;
             width: 120px;
             height: 40px;
-                                   
         }
     }
 
     .contact {
         margin-top: 50px;
         margin-bottom: 100px;
-        
-        &__head{
+
+        &__head {
             max-width: 445px;
-            height: 160px;            
+            height: 160px;
         }
-        
-        &__title{
+
+        &__title {
             font-size: 30px;
-            margin-bottom: 25px;    
+            margin-bottom: 25px;
         }
-        
-        &__text{
+
+        &__text {
             font-size: 14px;
-        }        
-                       
+        }
+
         &__form {
-            margin:0;
+            margin: 0;
             padding-left: 20px;
             padding-right: 20px;
-            width: 100%;     
+            width: 100%;
         }
     }
 
@@ -150,43 +139,37 @@
             padding: 30px;
             margin-bottom: 15px;
         }
-                     
-        &__button{
+
+        &__button {
             margin-top: 0;
         }
-           
     }
 
-    .contact-form-select{
+    .contact-form-select {
         &__selection {
             width: 100%;
-            height: 60px !important;   
-            padding: 15px 25px;                                            
-        }      
+            height: 60px !important;
+            padding: 15px 25px;
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-
-    .header{
-    
-    
-        &__title{
-           
+    .header {
+        &__title {
             margin-top: 30px;
             margin-bottom: 15px;
-           
+
             font-size: 30px;
             color: #fff;
         }
-    
-        &__subtitle{
+
+        &__subtitle {
             font-size: 14px;
             height: 80px;
-                     
         }
-    
-        &__button{
+
+        &__button {
             margin-top: 15px;
             margin-bottom: 30px;
             width: 120px;
@@ -197,101 +180,87 @@
             text-transform: uppercase;
             cursor: pointer;
             color: $rose;
-    
-            &:hover{
+
+            &:hover {
                 color: rgb(34, 28, 88);
-                border-color: rgb(34, 28, 88);;
-                transition:  0.2s linear;
+                border-color: rgb(34, 28, 88);
+                transition: 0.2s linear;
             }
-           
         }
     }
 
-    .features{
-
+    .features {
         &__title {
             font-size: 25px;
         }
         &__wrapper {
-        padding-bottom: 50px;
+            padding-bottom: 50px;
+        }
     }
 
-}
-
-    .contact{
+    .contact {
         display: flex;
         justify-content: space-evenly;
         margin-top: 50px;
         margin-bottom: 300px;
-        
-        &__head{
+
+        &__head {
             max-width: 300px;
             height: 160px;
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-        
-        &__title{
+
+        &__title {
             font-size: 25px;
-            margin-bottom:15px;
-    
+            margin-bottom: 15px;
         }
-        
-        &__text{
+
+        &__text {
             font-size: 14px;
         }
-    
-        &-form{
-            :nth-child(1){
-                margin-right:0;
-            } 
-    
-                &__input{
+
+        &-form {
+            &__input {
                 width: 255px;
                 height: 30px;
                 padding: 20px;
                 border-radius: 6px;
                 margin-bottom: 5px;
-                border: 1px solid #333 ;
+                border: 1px solid #333;
                 box-sizing: border-box;
-    
-                        
-                &--tel{
+
+                &--tel {
                     width: 255px;
                     height: 40px;
-                      }
-                    }
-    
-            &__select{
-                &__selection{
-                width: 255px;
-                height: 40px !important;   
-                padding: 10px 25px;     
-                border-radius: 6px;
-                                            
-    
                 }
-    
+            }
+
+            &__select {
+                &__selection {
+                    width: 255px;
+                    height: 40px !important;
+                    padding: 10px 25px;
+                    border-radius: 6px;
+                }
+
                 &__dropdown {
-                    background-color:#fff;
+                    background-color: #fff;
                     color: #000;
                     .select2-results {
                         &__option {
                             &--highlighted {
-                                background-color:$rose !important;
-                                
+                                background-color: $rose !important;
                             }
-                        
                         }
                     }
                 }
             }
-                      
-    
-                 &__button{
+
+            &__button {
                 margin-top: 0;
-               
+
                 width: 160px;
                 height: 40px;
                 border: 1px solid #fff;
@@ -300,8 +269,7 @@
                 text-transform: uppercase;
                 cursor: pointer;
                 color: #fff;
-                        
-               }
-               
-                }}
+            }
+        }
+    }
 }

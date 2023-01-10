@@ -1,7 +1,7 @@
-.features{
+.features {
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
 
     &__title {
         margin: auto;
@@ -9,7 +9,7 @@
         margin-bottom: 60px;
         font-size: 32px;
     }
-    
+
     &__wrapper {
         display: flex;
         justify-content: center;
@@ -17,7 +17,6 @@
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 120px;
-        
     }
 
     &__block {
@@ -54,17 +53,15 @@
         margin: auto;
         text-align: center;
     }
-    
+
     &__link {
         margin: auto;
         text-align: center;
-        color:$rose;
+        color: $rose;
 
-        &:hover{
+        &:hover {
             color: rgb(34, 28, 88);
             transition: color 0.2s linear;
         }
     }
-
 }
-

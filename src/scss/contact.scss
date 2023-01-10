@@ -1,35 +1,32 @@
 @import "partials/mixins";
 @import "partials/params";
 
-.contact{
+.contact {
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
     margin-bottom: 300px;
-    
-    &__head{
+
+    &__head {
         width: 445px;
         height: 160px;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    
-    &__title{
+
+    &__title {
         font-size: 36px;
         margin-bottom: 50px;
-
     }
-    
-    &__text{
-        font-size: 14px;
-    }        
-       
-    
 
-    &__form{        
-        width: 540px;     
-    } 
+    &__text {
+        font-size: 14px;
+    }
+
+    &__form {
+        width: 540px;
+    }
 }
 
 .contact-form {
@@ -45,10 +42,9 @@
         padding: 30px;
         border-radius: 6px;
         margin-bottom: 30px;
-        border: 1px solid #333 ;
+        border: 1px solid #333;
         box-sizing: border-box;
 
-                
         &--tel {
             flex-basis: 100%;
         }
@@ -56,7 +52,7 @@
 
     &__button {
         margin-top: 30px;
-       
+
         width: 160px;
         height: 50px;
         border: 1px solid #fff;
@@ -65,27 +61,26 @@
         text-transform: uppercase;
         cursor: pointer;
         color: #fff;
-        
 
-        &:hover{
+        &:hover {
             color: rgb(34, 28, 88);
             border-color: rgb(34, 28, 88);
-            transition:  0.2s linear;
-        }}
-       
+            transition: 0.2s linear;
+        }
+    }
 }
 
 .contact-form-select {
     &__selection {
         width: 540px;
-        height: 60px !important;   
-        padding: 15px 25px;     
+        height: 60px !important;
+        padding: 15px 25px;
         border-radius: 6px;
 
-        & .select2{  
-            &__selection{
-                &--single{
-                    background-color: aqua;  
+        & .select2 {
+            &__selection {
+                &--single {
+                    background-color: aqua;
                 }
             }
         }
@@ -100,15 +95,13 @@
     }
 
     &__dropdown {
-        background-color:#fff;
+        background-color: #fff;
         color: #000;
         .select2-results {
             &__option {
                 &--highlighted {
-                    background-color:$rose !important;
-                    
+                    background-color: $rose !important;
                 }
-            
             }
         }
     }

@@ -1,17 +1,21 @@
-
-
-html,body {
-@include clear;
-width: 100%;
-font-family: 'Roboto', sans-serif;
+html,
+body {
+    @include clear;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
-@include clear; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include clear;
 }
 
 a {
